@@ -11,6 +11,7 @@ Routes,
 Route
 
 } from "react-router-dom";
+import Home from './components/Home';
 
 
 
@@ -62,7 +63,9 @@ function App() {
   
     <Routes>
     <Route exact path="/about" element={    <About/>} />
-    <Route  exact path="/"  element={    <TextForm  heading="enter the text to analyze" mode={mode} toggleMode={toggleMode} showAlert={showAlert}/>} />
+    <Route  exact path="/textutils"  element={    <TextForm  heading="enter the text to analyze" mode={mode} toggleMode={toggleMode} showAlert={showAlert}/>} />
+    <Route  exact path="/"  element={  <Home mode={mode} /> } />
+
     </Routes>
   
 
