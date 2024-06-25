@@ -3,6 +3,17 @@ import './App.css';
 import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
+import About from './components/About';
+
+
+import{
+Routes,
+Route
+
+} from "react-router-dom";
+
+
+
 
 function App() {
 
@@ -47,8 +58,13 @@ function App() {
 
 
 <div className="container my-3">
-<TextForm  heading="enter the text to analyze" mode={mode} toggleMode={toggleMode} showAlert={showAlert}/>
-{/* <About/> */}
+
+  
+    <Routes>
+    <Route exact path="/about" element={    <About/>} />
+    <Route  exact path="/"  element={    <TextForm  heading="enter the text to analyze" mode={mode} toggleMode={toggleMode} showAlert={showAlert}/>} />
+    </Routes>
+  
 
 </div>
 

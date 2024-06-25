@@ -31,7 +31,7 @@ export default function About() {
 
 
   return (
-    <div classNameName='container' style={myStyle}>
+    <div className='container' style={myStyle}>
         <h3 className='mx-4 mt-2'>about us</h3>
       <div className="accordion" id="accordionExample"  style={myStyle}>
   <div className="accordion-item"  style={myStyle}>
